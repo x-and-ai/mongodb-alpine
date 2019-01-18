@@ -8,6 +8,6 @@ VOLUME [ "/data/db" ]
 
 EXPOSE 27017
 
-USER mongodb 
+USER mongodb
 
-CMD mongod --bind_ip 0.0.0.0 
+CMD mongod --bind_ip 0.0.0.0

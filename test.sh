@@ -11,7 +11,7 @@ if [[ ! -e $MONGODB_DIR ]]; then
     mkdir $MONGODB_DIR
 fi
 
-if $(docker ps -a | grep -q ${TEST_CONTAINER_NAME}); then 
+if $(docker ps -a | grep -q ${TEST_CONTAINER_NAME}); then
     docker stop ${TEST_CONTAINER_NAME}
 fi
 
