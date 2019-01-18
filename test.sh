@@ -27,4 +27,4 @@ docker build --tag=$TEST_IMAGE_NAME .
 
 # docker run  --rm -it --name $TEST_CONTAINER_NAME   $TEST_IMAGE_NAME
 
-docker run  --rm -it -d --name $TEST_CONTAINER_NAME -v $MONGODB_DIR:/data/db -p 27018:27017 $TEST_IMAGE_NAME
+docker run  --rm -it --name $TEST_CONTAINER_NAME -v $MONGODB_DIR:/data/db -p 27018:27017 $TEST_IMAGE_NAME
