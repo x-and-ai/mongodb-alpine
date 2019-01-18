@@ -1,7 +1,6 @@
 FROM alpine:3.8
 
-RUN apk update && \
-    apk add --no-cache mongodb=3.6.7-r0 && \
+RUN apk add --no-cache mongodb=3.6.7-r0 && \
     mkdir -p /data/db && \
     chown -R mongodb /data/db
 
